@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save or retrieve a value from the store:" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/uiKeyLable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Key :" />
+			<EditText
+			    android:id="@+id/uiKeyEdit"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:inputType="text"
+			    android:labelFor="@+id/uiKeyEdit">
+			    <requestFocus/>
+			    </EditText>
+           
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/uiValueLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Value :"/>
+            <EditText 
+                android:id="@+id/uiValueEdit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:labelFor="@+id/uiValueEdit"
+                />
+           
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/uiTypeLable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type :" />
+
+            <Spinner
+                android:id="@+id/uiTypeSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+    </TableLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right">
+            <Button 
+                android:id="@+id/uiGetValueButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get Value"/>
+            <Button
+                android:id="@+id/uiSetValueButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Value"/>
+            </LinearLayout>
+</LinearLayout>
