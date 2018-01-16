@@ -46,4 +46,16 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>include</name>
+			<type>2</type>
+			<location>/home/brucewu/tools/android-ndk-r9d/platforms/android-19/arch-arm/usr/include</location>
+		</link>
+		<link>
+			<name>jni/include</name>
+			<type>2</type>
+			<location>/home/brucewu/tools/android-ndk-r9d/platforms/android-19/arch-arm/usr/include</location>
+		</link>
+	</linkedResources>
 </projectDescription>
