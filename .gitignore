@@ -1,1 +1,5 @@
 Store/bin/*
+Store/obj/*
+Store/libs/*
+Store/gen/*
+Store/assets/*
